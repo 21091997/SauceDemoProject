@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="parallelSuite">
+  <test thread-count="3" parallel="classes" name="Test">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="com.saucedemo.TestPack.TestClassAddToCart"/>
+      <class name="com.saucedemo.TestPack.TestClassLogin"/>
+      <class name="com.saucedemo.TestPack.LogOutTestclass"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
